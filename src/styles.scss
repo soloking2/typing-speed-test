@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+span.quote-chars.success {
+  color: green !important;
+}
+
+span.quote-chars.danger {
+  color: red;
+}
