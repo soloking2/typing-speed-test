@@ -17,7 +17,11 @@ import { Button } from '../model/button';
 })
 export class HomeComponent implements OnInit, AfterViewInit {
   message: string = 'Welcome To Typing Speed Test';
-  randomTexts = ['my name is solomon, i am a front-end developer'];
+  randomTexts = [
+    'my name is solomon, i am a front-end developer',
+    'Out too the been like hard off. Improve enquire welcome own beloved matters here.',
+    'On no twenty spring of in esteem spirit likely estate. Continue new you declared differed learning bringing honoured',
+  ];
   timers: Button[] = [
     {
       id: 1,
@@ -70,7 +74,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.time = this.chosenTime;
     this.mistakes = 0;
     this.document.getElementById('result').style.display = 'none';
-
   }
 
   startGame() {
@@ -109,7 +112,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.document.getElementById('end').style.display = 'block';
     this.document.getElementById('end').classList.add('mx-auto');
   }
-
 
   toCompare() {
     let quoteChars = Array.from(this.document.querySelectorAll('.quote-chars'));
